@@ -17,6 +17,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float gravity;
+    [SerializeField] AudioSource jumpSound;
     
     [SerializeField] private float jumpHeight;
 
@@ -86,6 +87,7 @@ public class CharacterMovement : MonoBehaviour
     private void Jump()
     {
         verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        jumpSound.Play();
     }
     
     private void Idle(){
