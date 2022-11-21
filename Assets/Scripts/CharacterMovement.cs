@@ -11,6 +11,10 @@ public class CharacterMovement : MonoBehaviour
     
     private Vector3 moveDirection;
     private Vector3 verticalVelocity;
+    // Set the animator as public in case we would use it in the future
+    public Animator animator;
+    // Determine the rotation speed
+    private float _rotationFactorPerFramef= 15.0f;
     
     [SerializeField] private bool isGrounded;
     //[SerializeField] Transform groundCheck;
@@ -28,12 +32,18 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            StartCoroutine(Attack());
+        }
     }
     
     private void Move()
@@ -77,12 +87,32 @@ public class CharacterMovement : MonoBehaviour
        
         
 
-
+        HandleRotation();
         controller.Move(moveDirection * Time.deltaTime);
 
         verticalVelocity.y += gravity * Time.deltaTime;
         controller.Move(verticalVelocity * Time.deltaTime);
     }
+    
+    bool IsMoving()
+    {
+        return moveDirection.x != 0 || moveDirection.z != 0;
+    }
+
+    void HandleRotation()
+    {
+        Vector3 positionToLookAt;
+        positionToLookAt.x = Input.GetAxis("Horizontal");
+        positionToLookAt.y = 0.0f;
+        positionToLookAt.z = Input.GetAxis("Vertical");
+        Quaternion currentRotation = transform.rotation;
+        if (IsMoving())
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(positionToLookAt);
+            transform.rotation = Quaternion.Slerp(currentRotation, targetRotation, _rotationFactorPerFramef * Time.deltaTime);
+        }
+    }
+
     
     private void Jump()
     {
@@ -91,14 +121,34 @@ public class CharacterMovement : MonoBehaviour
     }
     
     private void Idle(){
+
+        animator.SetFloat("MovingSpeed", 0, 0.3f, Time.deltaTime);
         
     }
     private void Run()
     {
         moveSpeed = runSpeed;
+        animator.SetFloat("MovingSpeed", 1f, 0.3f, Time.deltaTime);
     }
     private void Walk()
     {
         moveSpeed = walkSpeed;
+        animator.SetFloat("MovingSpeed", 0.5f, 0.3f, Time.deltaTime);
+    }
+
+    private IEnumerator Attack()
+    {
+        animator.SetLayerWeight(animator.GetLayerIndex("Combat Layer"), 0.5f);
+        
+        
+        animator.SetTrigger("MeleeAttack");
+        
+
+       
+        yield return new WaitForSeconds(0.9f);
+        animator.SetLayerWeight(animator.GetLayerIndex("Combat Layer"), 1);
+
+     
+       
     }
 }
