@@ -17,5 +17,9 @@ public class Item : ScriptableObject
         // Something might happen
 
         Debug.Log("Using " + name);
+        if (itemName == "Key")
+        {
+            FindObjectOfType<PlayerHealth>().playerHealth++;
+        }
     }
 }
