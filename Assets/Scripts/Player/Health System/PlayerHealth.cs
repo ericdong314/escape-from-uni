@@ -37,8 +37,19 @@ public class PlayerHealth : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
+        }
+    }
 
+    public void DecreaseHealth(int amount){
+        playerHealth -= amount;
+        if(playerHealth <=0){
+            playerHealth = 0;
+            //Die();
 
         }
+    }
+
+    public void AddHealth(int amount){
+        playerHealth += amount;
     }
 }
