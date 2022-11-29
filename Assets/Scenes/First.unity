@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7287,7 +7287,7 @@ RectTransform:
   - {fileID: 1627238697}
   - {fileID: 566304477}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7456,7 +7456,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5835097997561767916, guid: ccbb6885223a0cd4e95835b23528f3c1, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5835097997561767916, guid: ccbb6885223a0cd4e95835b23528f3c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11844,13 +11844,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3330603115178353932, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: dialogue.name
+      value: Susan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330603115178353932, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330603115178353932, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "You take the blue pill... the story ends, you wake up in your bed and
+        believe\rwhatever you want to believe. You take the red pill... you stay
+        in Wonderland, and I\rshow you how deep the rabbit hole goes\u201D\t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330603115178353932, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.88538
+      value: 17.25
       objectReference: {fileID: 0}
     - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11858,7 +11876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.973404
+      value: -23.04
       objectReference: {fileID: 0}
     - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12181,6 +12199,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 492454, guid: d8907e78c2c985144ab39a324c8597ea, type: 3}
   m_PrefabInstance: {fileID: 970401985}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1099912912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3330603115178353932, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "The brave who cleared the trial and brought enough keys to the\rworld
+        can open the forbidden door and find the truth of the world."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.88538
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42366743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.973404
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.055437
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9984622
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -173.644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358546366, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300570568358864460, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
+      propertyPath: m_Name
+      value: Pedestrian01 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26690f22f89033f4cb1bba02b81de50b, type: 3}
 --- !u!4 &1111389406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 427308, guid: c50789636e1fc5c4b8a37e2700e4a3c1, type: 3}
@@ -12731,7 +12811,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161181375}
-  m_LocalRotation: {x: 0.38013455, y: -0.000000022506809, z: 0.0000000092500025, w: 0.9249312}
+  m_LocalRotation: {x: 0.38013455, y: 0.000000022506816, z: -0.000000009250004, w: 0.9249312}
   m_LocalPosition: {x: 0, y: 5.41, z: -5.4699993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13005,7 +13085,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1191040820 stripped
 Transform:
@@ -17557,7 +17637,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1691832850 stripped
 Transform:
@@ -19169,7 +19249,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859582511}
-  m_LocalRotation: {x: 0.38013455, y: -0.000000022506809, z: 0.0000000092500025, w: 0.9249312}
+  m_LocalRotation: {x: 0.38013455, y: 0.000000022506816, z: -0.000000009250004, w: 0.9249312}
   m_LocalPosition: {x: 15.52415, y: 5.9558153, z: -33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22466,7 +22546,7 @@ Transform:
   - {fileID: 2876336188158717881}
   - {fileID: 2876336190060866768}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2876336188751949959
 GameObject:
@@ -23147,7 +23227,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5600239270756119104
 GameObject:
@@ -24020,7 +24100,7 @@ RectTransform:
   - {fileID: 5600239272585456750}
   - {fileID: 972239841}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
