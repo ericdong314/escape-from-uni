@@ -49,7 +49,4 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void AddHealth(int amount){
-        playerHealth += amount;
-    }
 }
