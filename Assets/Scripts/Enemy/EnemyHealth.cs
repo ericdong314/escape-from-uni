@@ -27,8 +27,7 @@ public class EnemyHealth : MonoBehaviour
     public void Die(){
         //destory();
         Debug.Log("The enemy is dead");
-        _animator.SetTrigger("Die");
-        _animator.SetTrigger("Stuck");
+        _animator.SetBool("isDead", true);
     }
 
 
