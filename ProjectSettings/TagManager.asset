@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Weapon
   - NextRoom
+  - PreviousRoom
+  - FirstRoom
+  - Sub1
+  - Sub2
   layers:
   - Default
   - TransparentFX
