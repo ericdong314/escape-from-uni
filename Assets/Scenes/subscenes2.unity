@@ -291,7 +291,7 @@ PrefabInstance:
     - target: {fileID: 2983342809500714495, guid: e3e6d908951a86c46a40919bafc6081c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1672605889}
     - target: {fileID: 2983342809500714495, guid: e3e6d908951a86c46a40919bafc6081c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleMenu
@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 2983342811214704783, guid: e3e6d908951a86c46a40919bafc6081c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1672605889}
     - target: {fileID: 2983342811214704783, guid: e3e6d908951a86c46a40919bafc6081c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitGame
@@ -7022,7 +7022,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828656851}
-  m_LocalRotation: {x: 0.38013446, y: 0.000000015914722, z: -0.0000000065407395, w: 0.9249313}
+  m_LocalRotation: {x: 0.38013446, y: -0.000000015914717, z: 0.0000000065407373, w: 0.9249312}
   m_LocalPosition: {x: -25.12, y: 6.0899997, z: -44.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13866,7 +13866,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546005958}
-  m_LocalRotation: {x: 0.38013446, y: 0.000000015914722, z: -0.0000000065407395, w: 0.9249313}
+  m_LocalRotation: {x: 0.38013446, y: -0.000000015914717, z: 0.0000000065407373, w: 0.9249312}
   m_LocalPosition: {x: 0, y: 5.41, z: -5.470001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22293,7 +22293,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3961889955248608917}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.12026854, y: 1.328436, z: 0.120268464}
